@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="”utf-8”" />
     <title>JSP World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style1.css" />
+    <script type="text/javascript">
+      function press() {
+        alert("버튼을 클릭하셨네요^^");
+      }
+    </script>
   </head>
   <body>
     <section>
-      <!-- 1. 헤더 -->
       <header class="header1">
-        <h1>웹 화면구성 기초</h1>
+        <center>
+          <h1>웹 화면구성 기초</h1>
+        </center>
       </header>
-      <!-- 2. 본문 -->
       <section>
         <br /><br />
-        안녕하세요...
+        안녕하세요...<br />
+        <button type="button" onClick="press();">클릭하세요!</button>
         <br /><br /><br />
       </section>
-      <!-- 3. 푸터 -->
       <footer class="footer1">
-        <h3>(주)인덕대학교 1234</h3>
+        <center>
+          <h3>(주)인덕대학교1234</h3>
+        </center>
       </footer>
     </section>
   </body>
