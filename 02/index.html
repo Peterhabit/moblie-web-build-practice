@@ -3,6 +3,21 @@
   <head>
     <title>JSP World</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- jQuery, jQuery Mobile 라이브러리 사용: CDN 방식 -->
+    <!-- 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+-->
+
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css"
+    />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
     <link rel="stylesheet" href="style1.css" />
     <script type="text/javascript">
       function press() {
@@ -13,9 +28,7 @@
   <body>
     <section>
       <header class="header1">
-        <center>
-          <h1>웹 화면구성 기초</h1>
-        </center>
+        <h1>웹 화면구성 기초</h1>
       </header>
       <section>
         <br /><br />
@@ -23,10 +36,13 @@
         <button type="button" onClick="press();">클릭하세요!</button>
         <br /><br /><br />
       </section>
-      <footer class="footer1">
-        <center>
-          <h3>(주)인덕대학교1234</h3>
-        </center>
+      <footer
+        class="footer1"
+        data-role="footer"
+        data-theme="a"
+        data-position="fixed"
+      >
+        <h3>(주)인덕대학교1234</h3>
       </footer>
     </section>
   </body>
